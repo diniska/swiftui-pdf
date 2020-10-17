@@ -14,6 +14,8 @@ import PDFKit
 import SwiftUI
 #endif
 
+/// A view that displays PDF page inside its bounds.
+/// The PDF page automatically scales to fit the view
 @available(iOS 11.0, *)
 public final class AutoresizablePDFPageView: UIView {
     
@@ -66,6 +68,7 @@ public final class AutoresizablePDFPageView: UIView {
 
 import SwiftUI
 
+/// A view that displays a single PDF page
 @available(iOS 13.0, *)
 public struct PDFPageView: UIViewRepresentable {
     public typealias UIViewType = AutoresizablePDFPageView
