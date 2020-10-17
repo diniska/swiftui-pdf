@@ -1,0 +1,17 @@
+name: Swift
+
+on:
+  push:
+    branches: [ void ]
+  pull_request:
+    branches: [ void ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and test on iOS simulator
+      run: xcodebuild -scheme SwiftUIPDF test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
