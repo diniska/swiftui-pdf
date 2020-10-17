@@ -78,7 +78,7 @@ public struct PDFPageView: UIViewRepresentable {
     
     public func makeUIView(context: Context) -> UIViewType {
         let view = UIViewType(frame: .zero)
-        view.backgroundColor = .white //PDFs use white background and black text
+        view.backgroundColor = .clear
         view.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         view.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
         view.setContentHuggingPriority(.defaultLow, for: .horizontal)
