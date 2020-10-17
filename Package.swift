@@ -19,6 +19,7 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "SwiftUIPDFTests",
-            dependencies: ["SwiftUIPDF"]),
+            dependencies: ["SwiftUIPDF"],
+            resources: [.copy("Resources/sample.pdf")]),
     ]
 )
