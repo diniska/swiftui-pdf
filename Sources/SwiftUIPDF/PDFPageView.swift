@@ -26,9 +26,8 @@ public final class AutoresizablePDFPageView: UIView {
     
     private var pageSize: CGSize? {
         didSet {
-            aspectRatioConsrtaint = pageSize.map {
-                widthAnchor.constraint(equalTo: heightAnchor, multiplier: $0.width / $0.height)
-            }
+            guard pageSize != oldValue else { return }
+            invalidateIntrinsicContentSize()
         }
     }
     
