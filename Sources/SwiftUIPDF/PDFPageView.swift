@@ -19,11 +19,6 @@ import SwiftUI
 @available(iOS 11.0, *)
 public final class AutoresizablePDFPageView: UIView {
     
-    private var aspectRatioConsrtaint: NSLayoutConstraint? {
-        willSet { aspectRatioConsrtaint?.isActive = false }
-        didSet { aspectRatioConsrtaint?.isActive = true }
-    }
-    
     private var pageSize: CGSize? {
         didSet {
             guard pageSize != oldValue else { return }
