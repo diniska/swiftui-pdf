@@ -5,14 +5,10 @@
 //  Created by Denis Chaschin on 17.10.2020.
 //
 
-import UIKit
+#if canImport(PDFKit) && canImport(UIKit)
 
-#if canImport(PDFKit)
 import PDFKit
-
-#if canImport(SwiftUI) && canImport(Combine)
-import SwiftUI
-#endif
+import UIKit
 
 /// A view that displays PDF page inside its bounds.
 /// The PDF page automatically scales to fit the view
@@ -100,5 +96,6 @@ struct PDFPageView_Previews: PreviewProvider {
     }
 }
 
-#endif
-#endif
+#endif // SwiftUI & Combine
+
+#endif // PDFKit & UIView
