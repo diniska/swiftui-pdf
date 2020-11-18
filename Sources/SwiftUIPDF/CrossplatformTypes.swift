@@ -12,8 +12,6 @@ import CoreGraphics
 import UIKit
 public typealias PlatformView = UIView
 
-var currentGraphicsContext: CGContext? { UIGraphicsGetCurrentContext() }
-
 extension CGContext {
     static var swiftui_pdf_currentContext: CGContext? {
         UIGraphicsGetCurrentContext()
