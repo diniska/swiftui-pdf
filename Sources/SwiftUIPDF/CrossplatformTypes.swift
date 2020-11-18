@@ -13,7 +13,7 @@ import UIKit
 public typealias PlatformView = UIView
 
 extension CGContext {
-    static var swiftui_pdf_currentContext: CGContext? {
+    static var swiftuiPDF_currentContext: CGContext? {
         UIGraphicsGetCurrentContext()
     }
 }
@@ -30,7 +30,7 @@ extension NSView {
 }
 
 extension CGContext {
-    static var swiftui_pdf_currentContext: CGContext? {
+    static var swiftuiPDF_currentContext: CGContext? {
         NSGraphicsContext.current?.cgContext
     }
 }

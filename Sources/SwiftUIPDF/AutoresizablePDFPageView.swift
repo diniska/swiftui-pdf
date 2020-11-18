@@ -38,7 +38,7 @@ public final class AutoresizablePDFPageView: PlatformView {
         guard
             let page = page,
             let size = pageSize,
-            let context = CGContext.swiftui_pdf_currentContext
+            let context = CGContext.swiftuiPDF_currentContext
         else { return }
         let scale = bounds.size.width / size.width
         
