@@ -1,5 +1,5 @@
 //
-//  PDFPageView.swift
+//  PDFPageView+UIKit.swift
 //  
 //
 //  Created by Denis Chaschin on 17.10.2020.
