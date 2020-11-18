@@ -5,14 +5,11 @@
 //  Created by Denis Chaschin on 17.10.2020.
 //
 
-#if canImport(PDFKit) && canImport(UIKit)
-
-import PDFKit
-import UIKit
-
-#if canImport(SwiftUI) && canImport(Combine)
+#if canImport(PDFKit) && canImport(UIKit) && canImport(SwiftUI) && canImport(Combine)
 
 import SwiftUI
+import PDFKit
+import UIKit
 
 /// A view that displays a single PDF page
 @available(iOS 13.0, *)
@@ -39,13 +36,4 @@ extension PDFPageView: UIViewRepresentable {
     
 }
 
-@available(iOS 13.0, *)
-struct PDFPageView_Previews: PreviewProvider {
-    static var previews: some View {
-        PDFPageView()
-    }
-}
-
-#endif // SwiftUI & Combine
-
-#endif // PDFKit & UIView
+#endif

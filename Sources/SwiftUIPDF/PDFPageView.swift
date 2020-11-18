@@ -19,4 +19,17 @@ public struct PDFPageView {
     }
 }
 
-#endif
+#if canImport(SwiftUI) && canImport(Combine)
+
+import SwiftUI
+
+@available(iOS 13.0, *)
+struct PDFPageView_Previews: PreviewProvider {
+    static var previews: some View {
+        PDFPageView()
+    }
+}
+
+#endif // SwiftUI & Combine
+
+#endif // PDFKit
