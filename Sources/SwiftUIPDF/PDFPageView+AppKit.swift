@@ -14,6 +14,7 @@ import PDFKit
 /// A view that displays a single PDF page
 @available(macOS 10.15, *)
 extension PDFPageView: NSViewRepresentable {
+    
     public typealias NSViewType = AutoresizablePDFPageView
     
     public func makeNSView(context: Context) -> NSViewType {

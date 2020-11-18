@@ -14,6 +14,7 @@ import UIKit
 /// A view that displays a single PDF page
 @available(iOS 13.0, *)
 extension PDFPageView: UIViewRepresentable {
+    
     public typealias UIViewType = AutoresizablePDFPageView
     
     public func makeUIView(context: Context) -> UIViewType {
