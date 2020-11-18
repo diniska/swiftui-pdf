@@ -43,8 +43,10 @@ public final class AutoresizablePDFPageView: PlatformView {
         let scale = bounds.size.width / size.width
         
         context.scaleBy(x: scale, y: scale)
+        #if canImport(UIKit)
         context.translateBy(x: 0, y: size.height)
         context.scaleBy(x: 1, y: -1)
+        #endif
         page.draw(with: .trimBox, to: context)
     }
     
