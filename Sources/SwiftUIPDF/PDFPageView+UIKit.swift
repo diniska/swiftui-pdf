@@ -5,7 +5,7 @@
 //  Created by Denis Chaschin on 17.10.2020.
 //
 
-#if canImport(PDFKit) && canImport(UIKit) && canImport(SwiftUI) && canImport(Combine)
+#if canImport(PDFKit) && canImport(UIKit) && canImport(SwiftUI) && canImport(Combine) && (arch(arm64) || arch(x86_64))
 
 import SwiftUI
 import PDFKit
