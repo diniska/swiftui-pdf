@@ -19,7 +19,7 @@ public struct PDFPageView {
     }
 }
 
-#if canImport(SwiftUI) && canImport(Combine)
+#if canImport(SwiftUI) && canImport(Combine) && (arch(arm64) || arch(x86_64))
 
 import SwiftUI
 
